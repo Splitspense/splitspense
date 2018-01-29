@@ -11,6 +11,9 @@ This web app is based on the sql js project hosted at https://github.com/kripken
 4. Transaction Tags
 5. Transaction Contributions
 
+## Links
+* Javascript multi line string online https://codebeautify.org/string-builder
+
 ## Todos
 * ignore rows with is_deleted != 0 in all the calculations and displays
 * Use UUID instead of integer id in all tables

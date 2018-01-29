@@ -1,0 +1,11 @@
+<div ng-repeat="tr_set in transaction_sets">
+    <div style="display: inline-block">
+        <button ng-click="renameTransactionSet(tr_set.id, tr_set.name_string)">Rename</button>
+        <br>
+        <button>Load</button>
+    </div>
+    <span>{{tr_set.name_string}}</span>
+    <button ng-click="deleteTransactionSet(tr_set.id, tr_set.name_string)">Delete</button>
+</div>
+<br><button ng-click="insertTransactionSet()">Create Transaction Set</button>
+<br><span>{{message}}</span>
