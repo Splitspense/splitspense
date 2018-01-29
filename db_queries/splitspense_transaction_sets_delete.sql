@@ -1,1 +1,1 @@
-DELETE FROM transacton_sets WHERE ID = 1;
+DELETE FROM transaction_sets WHERE transaction_sets.id = 1;

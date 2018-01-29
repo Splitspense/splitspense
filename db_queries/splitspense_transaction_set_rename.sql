@@ -1,0 +1,1 @@
+UPDATE transaction_sets SET name_string = 'Texas' WHERE transaction_sets.id = 1;

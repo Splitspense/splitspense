@@ -71,10 +71,24 @@ ON people_details BEGIN
   SET updated_at = DATETIME('now')
   WHERE id = NEW.id;
 END;
+CREATE TRIGGER transactions_details_updated_at_trigger AFTER
+UPDATE
+ON transactions_details BEGIN
+  UPDATE transactions_details
+  SET updated_at = DATETIME('now')
+  WHERE id = NEW.id;
+END;
 CREATE TRIGGER transaction_tags_updated_at_trigger AFTER
 UPDATE
 ON transaction_tags BEGIN
   UPDATE transaction_tags
+  SET updated_at = DATETIME('now')
+  WHERE id = NEW.id;
+END;
+CREATE TRIGGER transaction_contributions_updated_at_trigger AFTER
+UPDATE
+ON transaction_contributions BEGIN
+  UPDATE transaction_contributions
   SET updated_at = DATETIME('now')
   WHERE id = NEW.id;
 END;
